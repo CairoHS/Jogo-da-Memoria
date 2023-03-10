@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <meta http-equiv="X-UA-Compatible" content="id=edge">
-        <title>Jogo da Memoria</title>
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
 
-    <body>
-        <header class="cabecalho">
-            
-        </header>
-        <main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="id=edge">
+    <title>Jogo da Memoria</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/carta.css">
+</head>
 
-        </main>
-        <script src=""></script>
-    </body>
+<body>
+    <header class="cabecalho">
+        <div class="carta cabecalho__img" >
+            <div class="carta__quadrado">
+                <div class="carta__simbolo1"></div>
+                <div class="carta__simbolo2"></div>
+                <div class="carta__simbolo3"></div>
+                <div class="carta__simbolo4"></div>
+            </div>
+        </div>
+        <h1 class="cabecalho__titulo">Jogo da Memoria</h1>
+
+    </header>
+    <main class="principal">
+        <div class="numeroCarta" id="caixa-de-escolha">
+            <input type="number" max="16" min="2" class="numeroCarta__quantidade" id="entrada">
+            <input type="button" value="Comfimar" class="numeroCarta__confirma" id="confirma">
+        </div>
+        <div id="caixa-de-cartas" class=caixaCartas ></div>
+        <!-- carta modelo para teste 
+        <div class="carta" >
+            <div class="carta__quadrado">
+                <div class="carta__simbolo1"></div>
+                <div class="carta__simbolo2"></div>
+                <div class="carta__simbolo3"></div>
+                <div class="carta__simbolo4"></div>
+            </div>
+        </div>
+        -->
+    </main>
+    <script src="js/adicionando-carta.js"></script>
+</body>
+
 </html>

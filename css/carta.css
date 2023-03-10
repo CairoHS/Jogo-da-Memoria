@@ -1,0 +1,65 @@
+.carta {
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+
+.carta__simbolo1,
+.carta__simbolo2,
+.carta__simbolo3,
+.carta__simbolo4 {
+    position: absolute;
+    width: 10%;
+    height: 6.7%;
+    border-radius: 50%;
+    background-color: var(--cor-do-cabecalho);
+    z-index: 2;
+}
+
+.carta__simbolo1 {
+    top: 1.6%;
+    left: 2.2%;
+}
+
+.carta__simbolo2 {
+    top: 1.6%;
+    right: 2.2%;
+}
+
+.carta__simbolo3 {
+    bottom: 1.6%;
+    left: 2.2%;
+}
+
+.carta__simbolo4 {
+    bottom: 1.6%;
+    right: 2.2%;
+}
+
+.carta__quadrado {
+    position: absolute;
+    inset: 5%;
+    background-color: transparent;
+    border: 3px var(--cor-do-cabecalho) solid;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.carta__costas {
+    background-color: var(--cor-do-cabecalho);
+    color: white;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    z-index: 1;
+    backface-visibility: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}

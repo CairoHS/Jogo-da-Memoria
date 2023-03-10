@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+--cor-do-cabecalho : #4c00b0;
+--cor-do-corpo : #e8bcf0;
+--cor-do-input : #bca0dc;
+--tamanho-do-cabecalho : 4rem;
+}
+
+body{
+    display: grid;
+    grid-template-rows: var(--tamanho-do-cabecalho) 1fr;
+    width: 100vw;
+    height: 100vh;
+    background: var(--cor-do-corpo);
+    font-size: 16px;
+}
+
+.cabecalho{
+    background: var(--cor-do-cabecalho);
+    height: var(--tamanho-do-cabecalho);
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__titulo{
+    color: white;
+    font-size: 2rem;
+    width: 80%;
+    display: inline-block;
+    margin-right: 8%;
+}
+
+.cabecalho__img{
+    height: 100%;
+    width: 10%;
+    max-width: 47px;
+}
+
+.principal {
+    padding: 0.8rem;
+    display:grid;
+    grid-template-rows: auto 1fr;
+}
+
+.numeroCarta{
+    width: 70%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.numeroCarta__quantidade{
+    width: 60%;
+    margin-right: 5%;
+    border: 1px darkorchid solid;
+    background-color: var(--cor-do-input);
+    border-radius: 3px ;
+    text-align: center;
+}
+
+.numeroCarta__confirma{
+    width: 35%;
+    height: 95%;
+    background-color: var(--cor-do-cabecalho);
+    border:1px darkorchid solid;
+    border-bottom: 3px darkorchid solid;
+    border-right: 3px darkorchid solid;
+    border-radius: 3px ;
+    color: white;
+    font-weight: bold;
+
+}
+
+.caixaCartas{
+    display:flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.girar{
+    transform: rotateY(180deg);
+}
+
+.fica{
+    transform: rotateY(180deg);
+}
