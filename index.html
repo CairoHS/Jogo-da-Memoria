@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="id=edge">
     <title>Jogo da Memoria</title>
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/carta.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="cabecalho">
-        <div class="carta cabecalho__img" >
+        <div class="carta cabecalho__img">
             <div class="carta__quadrado">
                 <div class="carta__simbolo1"></div>
                 <div class="carta__simbolo2"></div>
@@ -25,11 +27,15 @@
 
     </header>
     <main class="principal">
-        <div class="numeroCarta" id="caixa-de-escolha">
-            <input type="number" max="16" min="2" class="numeroCarta__quantidade" id="entrada">
-            <input type="button" value="Comfimar" class="numeroCarta__confirma" id="confirma">
+        <div class="jogo-da-memoria" id="jogo-da-memoria">
+            <div class="inputCarta" id="caixa-de-escolha">
+                <p class="input__aviso" id="textinho">teste</p>
+                <input type="number" class="input__quantidade" id="entrada">
+                <input type="button" value="Comfimar" class="input__confirma" id="confirma">
+            </div>
+            <div id="caixa-de-cartas" class=caixaCartas></div>
         </div>
-        <div id="caixa-de-cartas" class=caixaCartas ></div>
+
         <!-- carta modelo para teste 
         <div class="carta" >
             <div class="carta__quadrado">

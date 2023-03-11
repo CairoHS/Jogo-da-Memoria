@@ -1,0 +1,62 @@
+.inputCarta{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.input__aviso   {
+    width: 100%;
+    height: 50%;
+   /* padding : 1%; */
+    font-size: 1.2rem;
+}
+
+.input__quantidade{
+    width: 40%;
+    max-width: 200px;
+    height: 45%;
+    margin-right: 5%;
+    border: 1px var(--roxinho) solid;
+    background-color: var(--cor-do-input);
+    border-radius: 3px ;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.input__confirma{
+    width: 45%;
+    max-width: 200px;
+    height: 50%;
+    background-color: var(--cor-do-cabecalho);
+    border:1px var(--roxinho) solid;
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+    border-radius: 4px ;
+    color: var(--cor-da-fonte);
+    font-weight: bold;
+    transition: 0.1s all;
+}
+
+.input__confirma:active{
+    transform: translate(1px,1px);
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+}
+
+
+@media screen and (min-width:768px ){
+   /* .inputCarta{
+        min-height: 10rem;
+    }    
+    .input__quantidade{
+        font-size: 2rem;
+    }
+*/
+}
